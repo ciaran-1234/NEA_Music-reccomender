@@ -40,7 +40,7 @@ class MainWindow(QMainWindow):
         scope = ('user-read-private user-library-read user-read-playback-state '
                  'user-modify-playback-state user-top-read playlist-modify-private playlist-modify-public')
         token = util.prompt_for_user_token(
-            scope=scope, client_id='#CLIENTID', client_secret='#CLIENTSECRET', redirect_uri='#REDIRECTURI'
+            scope=scope, client_id='c38a0cdcdb1b428f8851719d35783148', client_secret='574fa31975c54682b6d67eb570ebf4bd', redirect_uri='http/host:5000'
         )
         self.spotify = Spotify(auth=token)
         self.genius = Genius("ACCESS_TOKEN")
