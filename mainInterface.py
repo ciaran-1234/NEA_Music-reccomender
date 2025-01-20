@@ -43,7 +43,7 @@ class MainWindow(QMainWindow):
             scope=scope, client_id='c38a0cdcdb1b428f8851719d35783148', client_secret='574fa31975c54682b6d67eb570ebf4bd', redirect_uri='http/host:5000'
         )
         self.spotify = Spotify(auth=token)
-        self.genius = Genius("ACCESS_TOKEN")
+        self.genius = Genius("lc1tyYU4BpQVBkxep1RHyJdJRwOnHR1ui_cBc_PusWH1fhqeey194LrMmdSXKau5")
         self.updateWelcomeMessage()
         self.updateTrackInfo()
 
