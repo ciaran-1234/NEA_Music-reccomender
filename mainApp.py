@@ -21,7 +21,7 @@ class SpotifyApp(QMainWindow):
         scope = 'user-read-playback-state user-modify-playback-state'
         self.sp = Spotify(auth=prompt_for_user_token(scope, client_id='c38a0cdcdb1b428f8851719d35783148',
                                                      client_secret='574fa31975c54682b6d67eb570ebf4bd',
-                                                     redirect_uri='google.com'))
+                                                     redirect_uri='http/host:5000'))
         self.genius = Genius("lc1tyYU4BpQVBkxep1RHyJdJRwOnHR1ui_cBc_PusWH1fhqeey194LrMmdSXKau5")
         self.current_track_id = None
 
