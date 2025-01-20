@@ -9,7 +9,7 @@ import spotipy.util as util
 import itertools
 
 class RecommendationModel():
-    def __init__(self, data_file='data.csv', genre_file='data_w_genres.csv', client_id='', client_secret='', redirect_uri=''):
+    def __init__(self, data_file='data.csv', genre_file='data_w_genres.csv', client_id='c38a0cdcdb1b428f8851719d35783148', client_secret='574fa31975c54682b6d67eb570ebf4bd', redirect_uri='http/host:5000'):
         # Load Data
         self.spotify_df = pd.read_csv(data_file)
         self.data_w_genre = pd.read_csv(genre_file)
